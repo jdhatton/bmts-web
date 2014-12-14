@@ -1,0 +1,133 @@
+
+	      /* GITHUB STYLES  */
+	      dl.form > dd p.note {
+			    color: #666666;
+			    font-size: 11px;
+			    margin: 2px 0 5px;
+		  }
+		  button.classy, button.classy:disabled, button.classy.disabled, a.button.classy:disabled, a.button.classy.disabled, button.classy:disabled:hover, button.classy.disabled:disabled:hover, a.button.classy.disabled:hover:disabled, a.button.classy.disabled:hover, a.button.classy, button.classy:disabled:hover, a.button.classy:disabled:hover, a.button.classy.disabled:hover {
+		    -moz-border-bottom-colors: none;
+		    -moz-border-left-colors: none;
+		    -moz-border-right-colors: none;
+		    -moz-border-top-colors: none;
+		    -moz-user-select: none;
+		    background-color: #FFFFF;
+		    background-image: linear-gradient(#FFFFFF, #FFFFFF);
+		    background-repeat: repeat-x;
+		    border-color: #DDDDDD #DDDDDD #BBBBBB;
+		    border-image: none;
+		    border-radius: 3px 3px 3px 3px;
+		    border-style: solid;
+		    border-width: 1px;
+		    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		    color: #666666;
+		    cursor: pointer;
+		    display: inline-block;
+		    font-family: Helvetica,arial,freesans,clean,sans-serif;
+		    font-size: 12px;
+		    font-weight: normal;
+		    line-height: normal;
+		    padding: 8px 15px;
+		    position: relative;
+		    text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+		}
+		button.classy.primary, a.primary.button.classy:disabled, a.primary.button.classy.disabled, button.primary.classy:disabled:hover, a.primary.button.classy.disabled:hover, a.button.classy.primary, button.classy.primary:disabled:hover, a.button.classy.primary:disabled:hover, a.button.classy.disabled.primary:hover {
+		    background-color: #60B044;
+		    background-image: linear-gradient(#8ADD6D, #60B044);
+		    background-repeat: repeat-x;
+		    border-color: #74BB5A #74BB5A #509338;
+		    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+		    color: #FFFFFF;
+		    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+		}
+		button.classy.primary:hover, a.primary.button.classy:hover:disabled, a.primary.button.classy.disabled:hover, a.button.classy.primary:hover, button.classy.primary:disabled:hover:hover, a.button.classy.primary:disabled:hover:hover, a.button.classy.disabled.primary:hover:hover {
+		    background-color: #4C8B36;
+		    background-image: linear-gradient(#69D344, #4C8B36);
+		    background-repeat: repeat-x;
+		    border-color: #4A993E;
+		    color: #FFFFFF;
+		}
+		button.classy.primary.mousedown, a.primary.mousedown.button.classy:disabled, a.primary.mousedown.button.classy.disabled, a.button.classy.primary.mousedown, button.classy.primary.mousedown:disabled:hover, a.button.classy.primary.mousedown:disabled:hover, a.button.classy.disabled.primary.mousedown:hover {
+		    background-color: #69D344;
+		    background-image: linear-gradient(#4C8B36, #69D344);
+		    background-repeat: repeat-x;
+		    border-bottom-color: #69D344;
+		}
+		button.primary.classy:disabled, a.primary.button.classy:disabled, button.primary.classy:disabled:hover, button.primary.classy:disabled:hover, a.primary.button.classy:disabled:hover, button.primary.disabled.classy, a.primary.disabled.button.classy, a.primary.disabled.button.classy:hover, button.primary.disabled.classy:hover, a.primary.disabled.button.classy:hover, a.button.classy.primary:disabled, a.button.classy.primary:disabled:hover, a.button.classy.primary.disabled, a.button.classy.primary.disabled:hover, button.classy.primary:disabled:hover:disabled, a.button.classy.primary:disabled:hover:disabled, button.classy.primary:disabled:hover:disabled:hover, a.button.classy.primary:disabled:hover:disabled:hover, button.classy.primary.disabled:disabled:hover, a.button.classy.primary.disabled:disabled:hover, button.classy.primary.disabled:disabled:hover:hover, a.button.classy.primary.disabled:disabled:hover:hover, a.button.classy.disabled.primary:hover:disabled, a.button.classy.disabled.primary:hover:disabled:hover, a.button.classy.disabled.primary.disabled:hover, a.button.classy.disabled.primary.disabled:hover:hover {
+		    background-color: #60B044;
+		    background-image: linear-gradient(#8ADD6D, #60B044);
+		    background-repeat: repeat-x;
+		    border-color: #74BB5A #74BB5A #509338;
+		    color: #FFFFFF;
+		}
+		button.classy.danger, a.danger.button.classy:disabled, a.danger.button.classy.disabled, button.danger.classy:disabled:hover, a.danger.button.classy.disabled:hover, a.button.classy.danger, button.classy.danger:disabled:hover, a.button.classy.danger:disabled:hover, a.button.classy.disabled.danger:hover {
+		    color: #990000;
+		}
+		button.classy.danger:hover, a.danger.button.classy:hover:disabled, a.danger.button.classy.disabled:hover, a.button.classy.danger:hover, button.classy.danger:disabled:hover:hover, a.button.classy.danger:disabled:hover:hover, a.button.classy.disabled.danger:hover:hover {
+		    background-color: #B33630;
+		    background-image: linear-gradient(#DC5F59, #B33630);
+		    background-repeat: repeat-x;
+		    border-bottom-color: #CD504A;
+		    color: #FFFFFF;
+		    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+		}
+		button.danger.classy:disabled, a.danger.button.classy:disabled, button.danger.classy:disabled:hover, button.danger.classy:disabled:hover, a.danger.button.classy:disabled:hover, button.danger.disabled.classy, a.danger.disabled.button.classy, a.danger.disabled.button.classy:hover, button.danger.disabled.classy:hover, a.danger.disabled.button.classy:hover, a.button.classy.danger:disabled, a.button.classy.danger:disabled:hover, a.button.classy.danger.disabled, a.button.classy.danger.disabled:hover, button.classy.danger:disabled:hover:disabled, a.button.classy.danger:disabled:hover:disabled, button.classy.danger:disabled:hover:disabled:hover, a.button.classy.danger:disabled:hover:disabled:hover, button.classy.danger.disabled:disabled:hover, a.button.classy.danger.disabled:disabled:hover, button.classy.danger.disabled:disabled:hover:hover, a.button.classy.danger.disabled:disabled:hover:hover, a.button.classy.disabled.danger:hover:disabled, a.button.classy.disabled.danger:hover:disabled:hover, a.button.classy.disabled.danger.disabled:hover, a.button.classy.disabled.danger.disabled:hover:hover {
+		    background-color: #E1E1E1;
+		    background-image: linear-gradient(#FFFFFF, #E1E1E1);
+		    background-repeat: repeat-x;
+		    color: #FFFFFF;
+		    text-shadow: 0 1px 0 #FFFFFF;
+		}
+		button.classy.danger.mousedown, a.danger.mousedown.button.classy:disabled, a.danger.mousedown.button.classy.disabled, a.button.classy.danger.mousedown, button.classy.danger.mousedown:disabled:hover, a.button.classy.danger.mousedown:disabled:hover, a.button.classy.disabled.danger.mousedown:hover {
+		    background-color: #0066CC;
+		    background-image: linear-gradient(#3366CC, #3366FF);
+		    background-repeat: repeat-x;
+		    border-bottom-color: #DC5F59;
+		}
+		button.classy:hover, a.button.classy:hover:disabled, a.button.classy.disabled:hover, button.classy.disabled:hover:disabled, a.button.classy.disabled:hover:disabled, a.button.classy:hover, button.classy:disabled:hover:hover, a.button.classy:disabled:hover:hover, a.button.classy.disabled:hover:hover {
+		    background-color: #000066;
+		    background-image: linear-gradient(#000066, #000099);
+		    background-repeat: repeat-x;
+		    border-color: #CBE3EE #CBE3EE #97C7DD;
+		    color: #337797;
+		    text-decoration: none;
+		}
+		button.classy:disabled, a.button.classy:disabled, button.classy:disabled:hover, button.classy.disabled:disabled:hover, a.button.classy.disabled:disabled:hover, button.disabled.classy, a.disabled.button.classy, button.disabled.classy:disabled:hover, a.disabled.button.classy:hover:disabled, a.disabled.button.classy:hover, a.button.classy:disabled, a.button.classy.disabled, button.classy:disabled:hover:disabled, a.button.classy:disabled:hover:disabled, button.classy.disabled:disabled:hover, a.button.classy.disabled:disabled:hover, a.button.classy.disabled:hover:disabled, a.button.classy.disabled.disabled:hover {
+		    opacity: 0.5;
+		}
+		button.classy:disabled:hover, a.button.classy:disabled:hover, button.disabled.classy:hover, a.disabled.button.classy:hover, a.button.classy:disabled:hover, a.button.classy.disabled:hover, button.classy:disabled:hover:disabled:hover, a.button.classy:disabled:hover:disabled:hover, button.classy.disabled:disabled:hover:hover, a.button.classy.disabled:disabled:hover:hover, a.button.classy.disabled:hover:disabled:hover, a.button.classy.disabled.disabled:hover:hover {
+		    -moz-border-bottom-colors: none;
+		    -moz-border-left-colors: none;
+		    -moz-border-right-colors: none;
+		    -moz-border-top-colors: none;
+		    background-color: #E5E5E5;
+		    background-image: linear-gradient(#F5F5F5, #E5E5E5);
+		    background-repeat: repeat-x;
+		    border-color: #DDDDDD #DDDDDD #BBBBBB;
+		    border-image: none;
+		    border-style: solid;
+		    border-width: 1px;
+		    color: #666666;
+		    cursor: default;
+		}
+		button.classy.mousedown, a.mousedown.button.classy:disabled, a.mousedown.button.classy.disabled, button.mousedown.classy:disabled:hover, a.mousedown.button.classy.disabled:hover, a.button.classy.mousedown, button.classy.mousedown:disabled:hover, a.button.classy.mousedown:disabled:hover, a.button.classy.disabled.mousedown:hover {
+		    background-color: #0CA6DD;
+		    background-image: linear-gradient(#0770A0, #0CA6DD);
+		    background-repeat: repeat-x;
+		    border-color: #2A65A0 #2A65A0 #0770A0;
+		    color: #FFFFFF;
+		    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+		}
+		button.classy::-moz-focus-inner, button.classy:disabled::-moz-focus-inner, button.classy.disabled::-moz-focus-inner, a.button.classy:disabled::-moz-focus-inner, a.button.classy.disabled::-moz-focus-inner, button.classy:hover:disabled::-moz-focus-inner, button.classy.disabled:hover:disabled::-moz-focus-inner, a.button.classy.disabled:disabled:hover::-moz-focus-inner, a.button.classy.disabled:hover::-moz-focus-inner {
+		    margin: -1px -3px;
+		}
+		a.button.classy {
+		    display: inline-block;
+		}
+		button.classy img, button.classy:disabled img, button.classy.disabled img, a.button.classy:disabled img, a.button.classy.disabled img, button.classy:disabled:hover img, button.classy.disabled:disabled:hover img, a.button.classy.disabled:hover:disabled img, a.button.classy.disabled:hover img, a.button.classy img {
+		    margin-right: 3px;
+		    position: relative;
+		    top: -1px;
+		    vertical-align: middle;
+		}
+
