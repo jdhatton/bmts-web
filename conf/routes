@@ -13,3 +13,11 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
+
+application.global=Global
+
+GET     /user/?                      Users.index 
+POST    /user/new                    Users.save
+GET     /user/all                    Users.all
+GET     /user/{id}                   Users.user

@@ -1,0 +1,108 @@
+task hello {
+  doLast {
+    println  'Hello world'
+    }
+  }
+  
+  
+  
+  subprojects {
+    group = 'com.h5g.ugp.ws'
+    version = 2.0
+    apply from: "$rootDir/gradle/versioning.gradle"
+
+    apply plugin: 'java'
+    apply plugin: 'maven'
+
+
+    sourceCompatibility = '1.7'
+    targetCompatibility = '1.7'
+
+    ext {
+        testNgVer = "6.8.8"
+        commonWsVer = "2.1-sprint10-2014.10.29.105321"
+        dbVer = "1.1-maint-maint-2014.09.12.190119"
+    }
+
+    task sourcesJar(type: Jar, dependsOn:classes) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+    }
+
+    task javadocJar(type: Jar, dependsOn:javadoc) {
+        classifier = 'javadoc'
+        from javadoc.destinationDir
+    }
+
+    artifacts {
+        archives sourcesJar
+        archives javadocJar
+    }
+
+ 
+}
+
+// Disable root project installs.
+rootProject.install.enabled=false
+rootProject.uploadArchives.enabled=false
+
+project(":store-api") {
+    dependencies {
+        compile "com.h5g.ugp.ws:common-api:$commonWsVer"
+    }
+    ext {
+        sonarName = "Api"
+    }
+}
+
+project(":store-client") {
+    dependencies {
+        compile project(":store-api")
+        compile "com.h5g.ugp.ws:common-client:$commonWsVer"
+    }
+    ext {
+        sonarName = "Client"
+    }
+}
+
+
+project(":store-server") {
+    ext {
+        sonarName = "Server"
+    }
+
+    dependencies {
+        compile project(":store-api")
+        compile 'org.apache.commons:commons-lang3:3.1'
+        compile 'com.h5g.ugp.util:crypto-api:2.0.19'
+
+        compile "com.h5g.ugp.ws:common:$commonWsVer"
+
+        // Cross service wiring.
+        compile 'com.h5g.ugp.ws:account-client:2.0-sprint10-2014.11.12.162818'
+        compile 'com.h5g.ugp.campaign:campaign-support:1.0-maint-2014.10.24.112225'
+        compile 'com.h5g.ugp.ws:content-client:2.0-sprint10-2014.11.11.094215'
+        compile 'com.h5g.ugp.ws:group-client:2.0-maint-2014.09.12.220316'
+        compile 'com.h5g.ugp.ws:player-client:1.0-release-2014.09.24.160617'
+
+        compile 'com.paypal.sdk:rest-api-sdk:0.9.1'
+
+        compile ('com.github.rholder:guava-retrying:1.0.6') {
+            exclude group: "com.google.guava", module: "*"
+            exclude group: "com.google.code.findbugs", module: "*"
+        }
+
+        testCompile "org.testng:testng:$testNgVer"
+        testCompile "com.h5g.ugp.db:db-test:$dbVer"
+    }
+
+    jar {
+        exclude("logback.xml")
+        manifest {
+            attributes "Implementation-Version" : "$version"
+        }
+    }
+
+}
+    
+    
