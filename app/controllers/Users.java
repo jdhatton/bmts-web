@@ -14,7 +14,7 @@ public class Users extends Controller {
     public static void user(Long id)  {
     	UserService service = new UserService();
         User user = service.getUser(id);
-        render(user);
+        renderJSON(user);
     }
     
     public static void all( )  {

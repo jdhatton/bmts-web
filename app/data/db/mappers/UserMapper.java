@@ -18,9 +18,7 @@ public class UserMapper implements ResultSetMapper<User> {
 	@Override
 	public User map(int index, ResultSet r, StatementContext ctx)
 			throws SQLException {
-		return  
-		
-		new User(r.getLong("id"), r.getString("email"), 
+		return  new User(r.getLong("id"), r.getString("email"), 
 				r.getString("phone"), 
 				r.getDouble("zipCode"),
 				r.getString("schoolDistrict"), 
@@ -35,9 +33,7 @@ public class UserMapper implements ResultSetMapper<User> {
 				r.getInt("paid"), 
 				//new DateTime(r.getDate("lastActivity")),
 				//new DateTime(r.getDate("lastModified")), 
-				r.getString("lastModifiedBy") );
-		
-		
+				r.getString("lastModifiedBy") );		
 	}
  
 }

@@ -10,22 +10,15 @@ public class UserService {
 	private UserDao userDao;
 	
 	public UserService() {
-		// TODO Auto-generated constructor stub
 		userDao = new UserDao();
 	}
 	
-	public List<User> getAllUsers() {
-		
-		return userDao.findAll();
-		
+	public List<User> getAllUsers() {		
+		return userDao.findAll();		
 	}
 	
-	public User getUser( long Id) {
-		
-		return userDao.findById(Id);
-		
+	public User getUser( long Id) {		
+		return userDao.findById(Id);		
 	}
 	
-	
-
 }

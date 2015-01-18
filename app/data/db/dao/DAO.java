@@ -14,16 +14,12 @@ public abstract class DAO {
 		if(dbiConnection == null){
 			dbiConnection = new Connection();
 			db = dbiConnection.getConnection();
-			h = dbiConnection.getHandle();
-			
+			h = dbiConnection.getHandle();			
 		}
 	}
-	
-	
+		
 	protected static DBI getDBI(){
 		return db;
 	}
 	
-	
-
 }

@@ -5,7 +5,6 @@ import javax.persistence.Transient;
 import org.joda.time.DateTime;
  
 
-
 /**
  *  This class represents a User in the system.
  * @author jdhatton
@@ -41,9 +40,6 @@ public class User {
 	}
 	
 	
-
-
-
 	public User(long id, String email, String phone, double zipCode,
 			String schoolDistrict, String schoolName, int schoolGrade,
 			int registered, int role, String firstName, String lastName,
