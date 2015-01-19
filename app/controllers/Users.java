@@ -2,25 +2,29 @@ package controllers;
 
 import data.db.beans.User;
 import play.mvc.Controller;
-import services.UserService;
+import services.UserServiceImpl;
+
 import java.util.*;
 
-public class Users extends Controller {
+import com.google.inject.Inject;
 
-    public static void index() {
+public class Users extends InjectAwareController {
+
+	public Users( ) {
+		super();
+	}
+
+	public static void index() {
         render();
     }
     
     public static void user(Long id)  {
-    	UserService service = new UserService();
-        User user = service.getUser(id);
+        User user = userService.getUser(id);
         renderJSON(user);
     }
     
     public static void all( )  {
-    	UserService service = new UserService();
-        List<User> users = service.getAllUsers();
+        List<User> users = userService.getAllUsers();
         renderJSON(users);
     } 
-
 }

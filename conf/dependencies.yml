@@ -2,3 +2,6 @@
 
 require:
     - play
+    - com.google.guava -> guava 18.0
+    - com.google.inject -> guice 4.0-beta5
+    - org.jdbi -> jdbi 2.57

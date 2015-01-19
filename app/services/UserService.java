@@ -3,22 +3,12 @@ package services;
 import java.util.List;
 
 import data.db.beans.User;
-import data.db.dao.UserDao;
+import data.db.dao.UserDaoImpl;
 
-public class UserService {
+public interface UserService {
 
-	private UserDao userDao;
+	public List<User> getAllUsers() ;
 	
-	public UserService() {
-		userDao = new UserDao();
-	}
-	
-	public List<User> getAllUsers() {		
-		return userDao.findAll();		
-	}
-	
-	public User getUser( long Id) {		
-		return userDao.findById(Id);		
-	}
+	public User getUser( long Id);
 	
 }

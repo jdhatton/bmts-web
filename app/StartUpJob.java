@@ -1,6 +1,15 @@
 
+
+
+import aop.InjectorModule;
+
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+
+import data.db.dao.UserDaoImpl;
 import play.jobs.*;
 import play.*;
+import services.UserServiceImpl;
 
 
 
@@ -19,9 +28,14 @@ public class StartUpJob extends Job {
 	      
 	      System.out.println("  jdbiConnStr  =  "+jdbiConnStr);
 	      
+	      
+	      
 	      //
+	      // - Wire up guice injection
 	      //
-	      //
+	      Injector injector = Guice.createInjector(new InjectorModule());
+//	      UserServiceImpl userService = injector.getInstance(UserServiceImpl.class);
+//	      UserDaoImpl userDao = injector.getInstance(UserDaoImpl.class);
 	      
 	      //
 	      //
