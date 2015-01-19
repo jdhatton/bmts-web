@@ -27,4 +27,12 @@ public class Users extends InjectAwareController {
         List<User> users = userService.getAllUsers();
         renderJSON(users);
     } 
+    
+    public static void userCookie(){
+    	
+    }
+    
+    public static void authenticate() {
+    	
+    }
 }
