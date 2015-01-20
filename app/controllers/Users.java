@@ -35,4 +35,9 @@ public class Users extends InjectAwareController {
     public static void authenticate() {
     	
     }
+    
+    public static void testSearch( String zipCode) {
+    	String response = searchWrapper.searchForDistricts(zipCode);
+    	render(response);
+    }
 }

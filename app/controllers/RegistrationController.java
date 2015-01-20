@@ -16,6 +16,10 @@ public class RegistrationController extends InjectAwareController {
         
         renderJSON("TODO: Implement");
     }
+    
+    public static void getDistricts(String zipCode) {
+    	
+    }
 	
 	
 

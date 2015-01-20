@@ -6,6 +6,8 @@ package controllers;
 import play.mvc.Controller;
 import services.UserService;
 import services.UserServiceImpl;
+import utils.NcesEdGovWrapper;
+import utils.NcesEdGovWrapperImpl;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -21,6 +23,7 @@ public abstract class InjectAwareController extends Controller {
 
 	protected static UserService userService;
 	protected static UserDao userDao;
+	protected static NcesEdGovWrapper searchWrapper;
 
 	public InjectAwareController() {
 		//
@@ -41,6 +44,7 @@ public abstract class InjectAwareController extends Controller {
 		Injector injector = Guice.createInjector(new aop.InjectorModule());
 		userService = injector.getInstance(UserServiceImpl.class);
 		userDao = injector.getInstance(UserDaoImpl.class);
+		searchWrapper = injector.getInstance(NcesEdGovWrapperImpl.class);
 	}
 
 }

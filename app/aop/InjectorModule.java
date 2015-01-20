@@ -1,7 +1,8 @@
 package aop;
-import services.DataAwareService;
 import services.UserService;
 import services.UserServiceImpl;
+import utils.NcesEdGovWrapper;
+import utils.NcesEdGovWrapperImpl;
 
 import com.google.inject.AbstractModule;
 
@@ -20,7 +21,8 @@ public class InjectorModule extends AbstractModule {
 	protected void configure() {
 		
 		bind(UserDao.class).to(UserDaoImpl.class);
-		bind(UserService.class).to(UserServiceImpl.class);			
+		bind(UserService.class).to(UserServiceImpl.class);		
+		bind(NcesEdGovWrapper.class).to(NcesEdGovWrapperImpl.class);
 	}
 
 }
